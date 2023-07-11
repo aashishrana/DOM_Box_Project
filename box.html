@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #myBox {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox"></div>
+
+    <script>
+      const box = document.getElementById("myBox");
+
+      box.addEventListener("click", function () {
+        if (box.style.backgroundColor === "red") {
+          box.style.backgroundColor = "yellow";
+          box.style.width = "600px";
+          box.style.height = "600px";
+        } else {
+          box.style.backgroundColor = "red";
+          box.style.width = "300px";
+          box.style.height = "300px";
+        }
+      });
+    </script>
+  </body>
+</html>
